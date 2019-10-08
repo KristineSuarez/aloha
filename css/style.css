@@ -67,10 +67,13 @@ section {
 .main-navigation ul li {
     display: inline-block;
     padding: 40px;
-    font-size: 16px;
-    /* font-family: 'Raleway Light'; */
 }
-
+.main-navigation a{
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    text-decoration: none;
+    color: #e2574c;
+}
 
 /* banner area */
 .banner {
