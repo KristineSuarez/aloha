@@ -13,12 +13,12 @@ html {
 h1,
 h2,
 h3 { 
-    font-family: 'Playfair Display';
+    font-family: 'Playfair display';
     font-size: 16px;
 }
 
 p {
-    font-family: 'Raleway Light';
+    font-family: 'Raleway';
 }
 
 /* Common layout Classes */
@@ -29,6 +29,9 @@ p {
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    position: sticky;
+    background-color: white;
+    width: 100%;
 }
 #logo{
     height: 50px;
@@ -94,6 +97,8 @@ section {
 /* banner area */
 .banner {
     padding: 125px 0px;
+    /* background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url(./aloha/images/banner-girl.png) no-repeat center 60px,url(./aloha/images/flower-bkgd.jpg) repeat-x top; */
+    /* background: linear-gradient(rgb(61, 61, 61)); */
     background: url(../aloha/images/banner-girl.png), url(../aloha/images/flower-bkgd.jpg);
     background-repeat: no-repeat, repeat-x;
     background-position: center, bottom;
@@ -219,9 +224,6 @@ section {
     font-size: 20px;
 }
 
-/* .featured {
-    line-height: 150px;
-} */
 .featured h2 {
     font-size: 2.5rem;
     color: #2d2d2d;
@@ -271,34 +273,56 @@ section {
 }
 
 input {
-    border-radius: 10%;
+    border: 0;
 }
 .sign-up-form {
     position: relative;
     border: 1px solid black;
     max-width: 600px;
     margin: 0 auto;
+    background-color: white;
+    height: auto;
+    border-radius: 5rem;
+    justify-content: space-around;
 }
 .email {
-    width: 100%;
+    width: 70%;
+    padding: 1% 0;
 }
 .submit {
-    position: absolute;
+    position: relative;
     top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    background-color: #e2574c;
+    height: auto;
+    border-radius: 2rem;
+    padding: 2% 0;
+    width: 20%;
+   color: white;
+   font-size: 15px;
 }
+
 /* footer area */
 .footer {
     display: flex;
     justify-content: space-between;
     align-content: space-around;
-    background-color: black;
+    background-color: #242424;
     padding: 70px;
 }
-
 #info {
-    color: whitesmoke;
+    color: white;
+}
+#info a{
+    color: white;
+    text-decoration: none;
+}
+
+.address {
+    color: #969696;
+}
+
+.address a:hover {
+    color:#b64036;
 }
 #media {
     flex-direction: left;
@@ -314,29 +338,23 @@ input {
     text-decoration: none;
 }
 
+#media a:hover {
+    color: #b64036;
+}
+
 .fab {
     flex: inline-block;
     padding: .2px;
     padding-right: 15px;
 }
-/* body {
-    font-family: 'Raleway';
-    font-family: 'Playfair Display';
-}
 
-h2 { 
-    font-family: 'Playfair display';
-}
 
- /*bicycle */
- /* .fas {  
-    color: goldenrod;
-    font-size: 30px;
-}
-.fas:hover {
-    color: blue;
-}*/
  /* media */
  /* make sure when changing to media to change:
    url to no repeat
    display to block */
+
+   /* MEDIA */
+   @media screen and (max-width: 600px) {
+
+   }
