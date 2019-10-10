@@ -22,30 +22,52 @@ p {
 }
 
 /* Common layout Classes */
+/* header area */
 .container {
     max-width: 100%;
     height: auto;
-    display: flex;
-    justify-content: space-around;
+    display: inline-block;
+    /* justify-content: center;
     align-items: center;
     align-content: center;
-    position: sticky;
+    flex-flow: column wrap; */
+    position: relative;
     background-color: white;
     width: 100%;
 }
 #logo{
-    height: 50px;
-    width: 200px;
-    top: -5%;
+    /* height: 90px; */
+    width: 150px;
+    /* top: -5%; */
+    position: absolute;
+    padding: 2rem 0;
+    order: 1;
 }
 
 #basket {
-   height: 50px;
-   width: 200px;
-   order: 1; 
+    /* height: 50px; */
+   width: 60px; 
+   order: 2;
+   position: absolute;
+   right: 1%;
+   padding: 2rem 0;
+
 }
 
-/* header area */
+.main-navigation {
+    order: 3;
+}
+
+.main-navigation ul li {
+    /* display: inline-block; 
+    padding: 40px; */
+}
+.main-navigation a{
+    font-family: 'Raleway';
+    font-size: 16px;
+    text-decoration: none;
+    color: #e2574c;
+}
 section {
     text-align: center; 
     padding-bottom: 30px;
@@ -83,28 +105,18 @@ section {
 }
 
 
-.main-navigation ul li {
-    display: inline-block;
-    padding: 40px;
-}
-.main-navigation a{
-    font-family: 'Raleway';
-    font-size: 16px;
-    text-decoration: none;
-    color: #e2574c;
-}
 
 /* banner area */
 .banner {
     padding: 125px 0px;
     /* background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url(./aloha/images/banner-girl.png) no-repeat center 60px,url(./aloha/images/flower-bkgd.jpg) repeat-x top; */
     /* background: linear-gradient(rgb(61, 61, 61)); */
-    background: url(../aloha/images/banner-girl.png), url(../aloha/images/flower-bkgd.jpg);
-    background-repeat: no-repeat, repeat-x;
-    background-position: center, bottom;
-    background-size: 220px,cover;
-    line-height: 50px;
-    height:65vh;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.199)0,rgba(0,0,0,0.15)) ,
+    url(../aloha/images/banner-girl.png), url(../aloha/images/flower-bkgd.jpg);
+    background-repeat: no-repeat;
+    background-position: center, top;
+    background-size: cover,33vh;
+    height:80vh;
 }
 .banner-box {
     height: 100%;
@@ -156,7 +168,8 @@ section {
 }
 
 .product-item:nth-child(1) {
-    background-image: url(../aloha/images/mens-category.jpg);
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.199)0,rgba(0,0,0,0.15)) ,
+    url(../aloha/images/mens-category.jpg);
     background-repeat: no-repeat;
     width:50%;
     background-position: center;
@@ -164,14 +177,16 @@ section {
     border-left: 0px;
 }
 .product-item:nth-child(2) {
-    background: url(../aloha/images/trends-category.jpg);
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.199)0,rgba(0,0,0,0.15)) ,
+    url(../aloha/images/trends-category.jpg);
     background-repeat: no-repeat;
     width: 25%;
     background-position: center;
     background-size: cover;
 }
 .product-item:nth-child(3) {
-    background: url(../aloha/images/glasses-category.jpg);
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.199)0,rgba(0,0,0,0.15)) ,
+    url(../aloha/images/glasses-category.jpg);
     background-repeat: no-repeat;
     width: 25%;
     background-position: center;
@@ -180,7 +195,8 @@ section {
 
 }
 .product-item:nth-child(4) {
-    background: url(../aloha/images/sale-category.jpg);
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.199)0,rgba(0,0,0,0.15)) ,
+    url(../aloha/images/sale-category.jpg);
     background-repeat: no-repeat;
     width: 25%;
     background-position: center;
@@ -188,14 +204,16 @@ section {
     border-left: 0px;
 }
 .product-item:nth-child(5) {
-    background: url(../aloha/images/bags-category.jpg);
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.199)0,rgba(0,0,0,0.15)) ,
+    url(../aloha/images/bags-category.jpg);
     background-repeat: no-repeat;
     width: 25%;
     background-position: center;
     background-size: cover;
 }
 .product-item:nth-child(6) {
-    background: url(../aloha/images/womens-category.jpg);
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.199)0,rgba(0,0,0,0.15)) ,
+    url(../aloha/images/womens-category.jpg);
     background-repeat: no-repeat;
     width: 50%;
     background-position: center;
@@ -242,7 +260,8 @@ section {
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-image: url(../aloha/images/wave-bkgd.jpg); 
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.199)0,rgba(0,0,0,0.15)) ,
+    url(../aloha/images/wave-bkgd.jpg); 
     background-repeat: no-repeat;
     width: 100%;
     height: 400px;
@@ -355,6 +374,37 @@ input {
    display to block */
 
    /* MEDIA */
-   @media screen and (max-width: 600px) {
+   /* @media screen and (min-width: 600px) {
+       .container {
+           display: flex;
+           justify-content: center;
+           align-content: center;
+           flex-flow: column wrap;
+       }
+       #basket {
+           position: absolute;
+           left: 65%;
+       }
+       #logo {
+           position: absolute;
+           right: 70%;
+           height: 60px;
+       }
 
-   }
+       .main-navigation {
+           padding: 20px 0;
+       } */
+
+       /* .main-navigation {
+           position: relative;
+           padding: 20px 0;
+           /* display: flex;
+           justify-content: center;
+           align-content: center;
+           flex-flow: row wrap;
+           text-align: center; */
+
+       } */
+
+
+    }
