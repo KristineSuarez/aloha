@@ -7,19 +7,25 @@ document.addEventListener("DOMContentLoaded", function () {
     cellAlign: 'left',
     wrapAround: true,
     freeScroll: true,
-    autoplay: true
+    autoPlay: 1500
   });
 
   
 }); 
-document.getElementById('sign-up-form').addEventListener("submit", function()
-{
-  if(document.getElementById('your-email').Value!=null){
-    const txt=document.getElementById('your-email').Value;
-    alert("Please submit a valid email address");
-  }else (document.getElementById('your-email').Value)
-  const txtbox=document.getElementById('your-email').Value;
-alert("Thank you for subscribing! ");
+
+
+
+document.getElementById('sign-up-form').addEventListener("submit", function(event)
+{ 
+  event.preventDefault();
+
+  const emailInputVal = document.getElementById('your-email').value;
+
+  if(emailInputVal.length > 0){
+    alert("thank you for subscribing");
+  }else {
+    alert("please enter a valid email");
+  }
 });
 //end of doc ready
 
