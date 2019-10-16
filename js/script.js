@@ -22,19 +22,8 @@ document.getElementById('sign-up-form').addEventListener("submit", function(even
   const emailInputVal = document.getElementById('your-email').value;
 
   if(emailInputVal.length > 0){
-    alert("thank you for subscribing");
+    alert("Thank you for subscribing!");
   }else {
-    alert("please enter a valid email");
+    alert("Please enter a valid email");
   }
 });
-//end of doc ready
-
-// const button = document.getElementById("click-here");
-//   button.addEventListener("click", function (event) {
-//     if (!event) { 
-//       console.log("Please submit a valid email address");
-//     }else (event) {
-//       console.log("Thank you for subscribing!");
-//     }
-//     // console.log("You clicked a button!");
-//   });
