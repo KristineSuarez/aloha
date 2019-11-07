@@ -15,12 +15,14 @@
     h1,
     h2,
     h3 { 
-        font-family: 'Playfair display';
+        font-family: 'PlayfairDisplay';
         font-size: 14px;
     }
 
     p {
         font-family: 'Raleway';
+        font-weight: 300;
+        font-style: normal;
         font-size: 14px;
     }
 
@@ -69,6 +71,7 @@
     }
     .main-navigation a{
         font-family: 'Raleway';
+        font-weight: 300;
         font-size: 14px;
         text-decoration: none;
         color: #e2574c;
@@ -167,7 +170,7 @@
         align-items: center;
         height: 200px;
         border: solid 4px white;
-        font-family: 'Raleway Light';
+        font-family: 'Raleway';
         font-size: 2em;
     }
 
@@ -430,7 +433,7 @@
    .logo {
        align-self: border left;
        order: 1;
-       padding: 0px;
+       padding: 10px;
    }
 
    .basket {
